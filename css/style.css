@@ -1,0 +1,69 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+.logoNULP {
+    z-index: 0;
+}
+
+.buttons {
+    padding-top: 25px;
+    z-index: 1;
+}
+
+.currentSetting {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.currentShadow, .currentFlip, .currentSepia, .currentBW, .currentBlur, .currentMirror {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.range {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FC493A;
+}
+
+.inputRange {
+    width: 300px;
+    height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.select {
+    background-color: greenyellow;
+    color: black;
+}
+
+button {
+    background-color: #FC493A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a {
+    margin-top: 25px;
+}

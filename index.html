@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wt lab 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Лабораторна робота №4</h1>
+    <div class="currentSetting">
+        <p class="currentShadow">Shadow: 0</p>
+        <p class="currentFlip">Flip: 0</p>
+        <p class="currentSepia">Sepia: 0</p>
+        <p class="currentBW">BW: 0</p>
+        <p class="currentBlur">Blur: 0</p>
+        <p class="currentMirror">Mirror: false</p>
+    </div>
+    <img class='logoNULP' id="logoNULP" src="img/Nulp_logo_ukr.jpg" alt="fail to load img"">
+    <div class="buttons">
+        <button onclick="selectFilter('shadow', this)">Тінь</button>
+        <button onclick="selectFilter('flip', this)">Переворот</button>
+        <button onclick="selectFilter('mirror', this)">Дзеркало</button>
+        <button onclick="selectFilter('sepia', this)">Сепія</button>
+        <button onclick="selectFilter('BW', this)">ЧБ</button>
+        <button onclick="selectFilter('blur', this)">Розмиття</button>
+    </div>
+    <div class="range hidden">
+        <label for="range">
+            <input type="range" class="inputRange" id="range" min="0" max="100" value="0" onchange="setRange(this)">
+        </label>
+    </div>
+    <a href="https://github.com/yuzvak/wt-lab-4">Source</a>
+</body>
+</html>
